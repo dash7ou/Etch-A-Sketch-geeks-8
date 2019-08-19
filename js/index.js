@@ -38,7 +38,7 @@ function addDivs() {
   for (let i = 0; i < numberEntered; i++) {
     const divInContener = document.createElement("DIV");
     $contener.appendChild(divInContener);
-    divInContener.textContent = `${i + 1}`;
+    // divInContener.textContent = `${i + 1}`;
     divInContener.style.background = "#eee";
     divInContener.style.color = "blue";
     divInContener.style.textAlign = "center";
