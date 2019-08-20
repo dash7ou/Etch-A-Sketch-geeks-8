@@ -4,13 +4,7 @@ const body = document.querySelector("window");
 
 function promptPop() {
   let number = prompt("Please enter how many boxes you want!!");
-
-  //   number = typeof number === "string" ? number : false;
-  //   console.log(number);
-  //   if (!number) {
-  //     window.alert("You must enter number sorry");
-  //     return false;
-  //   }
+  number = compereByRegular(number);
   while ($contener.firstChild) {
     $contener.removeChild($contener.firstChild);
   }
@@ -63,5 +57,19 @@ function deleteColor(e) {
   setTimeout(function() {
     e.target.style.background = "#eee";
   }, 300);
+}
+
+function compereByRegular(text) {
+  console.log(text);
+  const Enter = text;
+  const reg = /[A-Z]/gi;
+  const isMatch = Enter.match(reg);
+  console.log(isMatch);
+  if (isMatch != null) {
+    alert("You must enter number sorry");
+    console.log("You must enter number sorry");
+    return promptPop();
+  }
+  return text;
 }
 $button.addEventListener("click", addDivs);
