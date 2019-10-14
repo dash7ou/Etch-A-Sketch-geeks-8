@@ -19,6 +19,10 @@ function addDivs() {
   if (!number) { //check if no num
     return promptPop();
   }
+  // check if user enter zero
+  if (number == 0) {
+    alert("sorry you cant enter '0'")
+  }
 
 
   const sqrtNumber = number;
