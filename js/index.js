@@ -17,9 +17,7 @@ function addDivs() {
   if (!number) {
     return promptPop();
   }
-  if (number > 64) {
-    alert("Available number between 0-64 sorry!!")
-  }
+
 
   const sqrtNumber = number;
   const numberEntered = number * number;
