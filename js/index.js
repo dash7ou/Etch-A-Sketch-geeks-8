@@ -17,6 +17,9 @@ function addDivs() {
   if (!number) {
     return promptPop();
   }
+  if (number > 64) {
+    alert("Available number between 0-64 sorry!!")
+  }
 
   const sqrtNumber = number;
   const numberEntered = number * number;
@@ -54,7 +57,7 @@ function generateRandomColor(e) {
 }
 
 function deleteColor(e) {
-  setTimeout(function() {
+  setTimeout(function () {
     e.target.style.background = "#eee";
   }, 300);
 }
