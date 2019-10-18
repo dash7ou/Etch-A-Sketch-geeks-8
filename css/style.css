@@ -7,6 +7,7 @@
 
 body {
   width: 100%;
+  /* overflow: hidden; */
 }
 
 main {
@@ -34,6 +35,7 @@ main .contener {
   grid-gap: 0.2rem;
   grid-template-columns: auto auto auto;
   width: 100%;
-  height: 38.7rem;
+  height: 36rem;
   background: #d2c1c1;
+
 }
